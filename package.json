@@ -1,0 +1,19 @@
+{
+  "name": "tsnode-rest-mysql-blog-api",
+  "version": "1.0.0",
+  "description": "A REST API with Nodejs and Mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewmoquia/tsnode-rest-mysql-blog-api.git"
+  },
+  "author": "John Andrew Moquia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewmoquia/tsnode-rest-mysql-blog-api/issues"
+  },
+  "homepage": "https://github.com/andrewmoquia/tsnode-rest-mysql-blog-api#readme"
+}
