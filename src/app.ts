@@ -2,7 +2,7 @@ import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import PostRouter from './routes/post.routes';
+import PostRouter from './api/post/post.routes';
 
 export class App {
    private app;

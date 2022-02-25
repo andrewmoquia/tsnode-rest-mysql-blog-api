@@ -1,5 +1,5 @@
 import { RequestHandler } from 'express';
-const models = require('../../models');
+const models = require('../../../models');
 
 export const createPost: RequestHandler = (req, res) => {
    const post = {
