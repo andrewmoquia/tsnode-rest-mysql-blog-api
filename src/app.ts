@@ -2,7 +2,7 @@ import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import PostRouter from './api/post/post.routes';
+import { Post } from './api/post/post.router';
 
 export class App {
    private app;
@@ -43,7 +43,7 @@ export class App {
       this.app.use(helmet());
 
       //Handle routes
-      this.app.use(PostRouter);
+      this.app.use(Post.createRouter());
 
       //Initiate the server app
       this.app.listen(this.port, () => {
