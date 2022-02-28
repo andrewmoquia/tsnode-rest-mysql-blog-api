@@ -8,11 +8,7 @@ class PostRouter {
    private validate = new PostValidator();
 
    createRouter() {
-      this.router.post(
-         '/create/post',
-         this.validate.postSchema,
-         this.actions.createPost
-      );
+      this.router.post('/create/post', this.validate.postSchema(), this.actions.createPost);
 
       this.router.get('/post/:id', this.actions.showPost);
 
