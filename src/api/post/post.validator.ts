@@ -44,7 +44,7 @@ export class PostValidator {
       user_id: this.user_id,
    });
 
-   public request = (schema: Schema) => {
+   public reqBody = (schema: Schema) => {
       return (req: Request, res: Response, next: NextFunction) => {
          const result = schema.validate(req.body);
 
