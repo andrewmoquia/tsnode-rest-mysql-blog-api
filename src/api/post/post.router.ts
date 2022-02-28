@@ -10,7 +10,7 @@ class PostRouter {
    createRouter() {
       this.router.post(
          '/create/post',
-         this.validate.reqBody(this.validate.PostSchema),
+         this.validate.postSchema,
          this.actions.createPost
       );
 
