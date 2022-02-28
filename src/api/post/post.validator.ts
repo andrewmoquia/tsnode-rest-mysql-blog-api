@@ -36,7 +36,7 @@ export class PostValidator {
       'any.required': 'Category ID field is required',
    });
 
-   public PostSchema = Joi.object().keys({
+   public schema = Joi.object().keys({
       title: this.title,
       content: this.content,
       image_url: this.image_url,
@@ -44,9 +44,9 @@ export class PostValidator {
       user_id: this.user_id,
    });
 
-   public reqBody = (schema: Schema) => {
+   public postSchema = () => {
       return (req: Request, res: Response, next: NextFunction) => {
-         const result = schema.validate(req.body);
+         const result = this.schema.validate(req.body);
 
          return result.error ? res.send({ messsage: result.error.details[0].message }) : next();
       };
