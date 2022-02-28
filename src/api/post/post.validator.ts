@@ -36,7 +36,7 @@ export class PostValidator {
       'any.required': 'Category ID field is required',
    });
 
-   public postSchema = Joi.object().keys({
+   public PostSchema = Joi.object().keys({
       title: this.title,
       content: this.content,
       image_url: this.image_url,
